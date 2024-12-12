@@ -1,0 +1,127 @@
+main.css
+
+/* Base styles for the entire document */
+body {
+    font-family: Arial, sans-serif; /* Set the default font family */
+    margin: 20px; /* Add margin around the body */
+    padding: 20px; /* Add padding inside the body */
+    background-color: #f4f4f4; /* Set the background color to a light gray */
+    color: #333; /* Set the default text color */
+}
+
+/* Styles for the header */
+header {
+    background-color: #d44500; /* Syracuse University orange for the background */
+    color: #fff; /* Set the text color to white */
+    padding: 20px 0; /* Add vertical padding but no horizontal padding */
+    text-align: center; /* Center-align the text */
+    font-size: 44px;
+    border-bottom: 2px solid #222; /* Add a dark border at the bottom */
+}
+
+/* Styles for the footer */
+footer {
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Add margin at the top */
+    padding: 10px 0; /* Add padding above and below the text */
+    background-color: #d44500; /* Syracuse University orange for the background */
+    color: #fff; /* Set the text color to white */
+    font-size: 14px;
+}
+
+/* Styles for the main article content */
+article {
+    max-width: 800px; /* Limit the width of the content to 800px */
+    margin: 20px auto; /* Center the content horizontally */
+    padding: 20px; /* Add padding inside the article */
+    border-left: 1px solid #ccc; /* Add a light border on the left side */
+    border-right: 1px solid #ccc; /* Add a light border on the right side */
+    background-color: #fff; /* Add a white background to the article */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Styles for headings */
+h1 {
+    font-size: 36px; /* Increase the font size */
+    margin-top: 0; /* Remove the default margin at the top */
+    color: #222; /* Darker color for better contrast */
+    text-transform: uppercase; /* Transform text to uppercase */
+}
+
+/* Styles for paragraphs */
+p {
+    line-height: 1.6; /* Set the line height to improve readability */
+    margin-bottom: 20px; /* Add margin at the bottom of paragraphs */
+    font-size: 16px; 
+}
+
+.caption {
+    font-size: 0.8em; /* Adjust the font size of the caption */
+    font-style: italic; /* Italicize the caption text */
+    color: #555; /* Subtle gray color */
+}
+
+.photo-credit {
+    font-weight: bold; /* Make the photo credit text bold */
+    color: #000; /* Set a stronger contrast for the credit text */
+}
+
+/* Styles for images */
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make images block-level elements */
+    margin: 0 auto 20px; /* Center images horizontally and add margin at the bottom */
+    border: 1px solid #ccc; /* Add a border around images */
+    border-radius: 4px; /* Slightly round the edges */
+}
+
+/* dek and byline are not pre-defined in HTML, so we have to give them a class in the HTML document. Then to select them in CSS, it's .dek and .byline (.selector) */
+.dek {
+    font-style: italic; /* Set the font style to italic */
+    font-size: 18px; /* Slightly larger font */
+    color: #444; /* Subtle dark gray */
+    margin-bottom: 10px; /* Add margin at the bottom */
+}
+
+.byline {
+    font-weight: bold; /* Make the text bold */
+    font-size: 14px; /* Slightly smaller font size */
+    color: #d44500; /* Match the Syracuse University orange */
+}
+
+/* Quote block styles */
+.quote {
+    font-style: italic; /* Italicize quotes */
+    color: #555; /* Use a muted gray color */
+    border-left: 4px solid #d44500; /* Add a Syracuse-orange border */
+    padding-left: 10px; /* Add space inside the quote block */
+    margin: 20px 0; /* Add space above and below the quote */
+}
+
+/* Styles for iframe (data visualizations) */
+iframe {
+    border: 2px solid #ccc; /* Add a light border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
+    margin: 20px 0; /* Add margin above and below the iframe */
+}
+
+/* @media apply styles based on the "viewport" - or screen size - of the device */
+@media (max-width: 768px) {
+    /* Adjust padding for smaller screens */
+    article {
+          padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px; /* Adjust heading size for smaller screens */
+    }
+
+    p {
+        font-size: 14px; /* Reduce paragraph font size */
+    }
+
+    footer {
+        font-size: 12px; /* Reduce footer font size */
+    }
+}
